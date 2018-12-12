@@ -1,8 +1,7 @@
 import * as React from 'react';
 import './Navbar.css';
 
-// import Categories from '../Categories/Categories'
-
+import Categories from '../NavbarItems/NavbarKategorien'
 export default function Navbar() {
     return (
         <nav className ="navbar navbar-expand-lg">
@@ -26,7 +25,7 @@ export default function Navbar() {
             </a>   
             <div className ="collapse navbar-collapse" id="NavbarToggle"> 
               <ul className ="navbar-nav mr-auto mt-lg-0">   
-                {/* <Categories/> */}
+                 <Categories/>
                 <li className="nav-item active"><a className="nav-link" href="#">Wunschbücher</a></li>
                 <li className="nav-item active"><a className="nav-link" href="#">Angebote</a></li>
               </ul>

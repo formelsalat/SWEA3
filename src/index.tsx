@@ -1,8 +1,12 @@
 import * as React from "react";
-import  {App} from "./App/App";
+import { App } from "./App/App";
 import { render } from "react-dom";
-import { BrowserRouter} from 'react-router-dom'
-
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery";
+import "popper.js";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import { BrowserRouter } from 'react-router-dom'
 // render(<App />, document.getElementById("root") as HTMLElement);
 
 
