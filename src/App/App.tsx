@@ -1,5 +1,5 @@
 import * as React from "react";
-import Navbar from 'src/Components/Navbar/Navbar';
+import Navbar from '../Components/Navbar/Navbar';
 
 // https://reactjs.org/docs/hooks-intro.html
 const { useState } = React;
@@ -7,7 +7,7 @@ const { useState } = React;
 export const App = () => {
   return (
     <>
-    <Navbar />
+    <Navbar/>
     </>
   )
 };
