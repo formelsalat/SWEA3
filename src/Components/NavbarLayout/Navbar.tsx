@@ -1,7 +1,10 @@
 import * as React from 'react';
 import './Navbar.css';
 
-import Categories from '../NavbarItems/NavbarKategorien'
+import Brand from './NavbarBrand'
+import Items from '../NavbarItems/NavbarItems'
+import Suche from '../Suche/Suche'
+
 export default function Navbar() {
     return (
         <nav className ="navbar navbar-expand-lg">
@@ -17,19 +20,22 @@ export default function Navbar() {
              <i className="fas fa-bars" style ={{color: "whitesmoke"}} /> 
             </button>
             
-            <a className ="Navbar-brand" 
-                href ="home">
-                  <i  className="fas fa-home fa-2x "
-                      style ={{color: "whitesmoke"}}
-                  />
-            </a>   
+            <Brand/>
+            
+                   
             <div className ="collapse navbar-collapse" id="NavbarToggle"> 
               <ul className ="navbar-nav mr-auto mt-lg-0">   
-                 <Categories/>
+                 
+                  <Items/> 
                 <li className="nav-item active"><a className="nav-link" href="#">Wunschbücher</a></li>
                 <li className="nav-item active"><a className="nav-link" href="#">Angebote</a></li>
               </ul>
-            </div>     
+            </div>  
+            <Suche/>
+            <a className="Bucket" 
+                href="Warenkorb">
+                <i className="fas fa-shopping-cart fa-2x " style ={{color: "whitesmoke"}}/>
+                </a>   
         </nav>    
     )
 }
