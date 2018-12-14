@@ -3,23 +3,24 @@ import Downshift from "downshift";
 import "./Suche.css";
 
 const books = [
-  { name: "Harry Potter" },
-  { name: "Net Moves" },
-  { name: "Half of a yellow sun" },
-  { name: "The Da Vinci Code" },
-  { name: "Born a crime" }
+  { name: "Harry Potter und der Stein der Weißen" },
+  {name: "Harry potter und die Kammer des Schreckens"},
+  {name: "Harry potter und der Gefangene von Askaban"},
+  {name: "Harry potter und der Feuerkelch"},
+  {name: "Harry potter und der Orden des Phönix"},
+  {name: "Harry potter und der Halbblutprinz"},
+  {name: "Harry potter und die Heiligtümer des Todes"},
+  { name: "React for Dummies" },
+  { name: "Typescript for Dummies" },
+  { name: "JavaScript for Dummies" },
+  { name: "Hook and other accidents" }
 ];
 
-const onChange = selectedBook => {
-  alert(`your favourite book is ${selectedBook.name}`);
-};
+
 
 export default function Suche() {
   return (
-    <Downshift
-      onChange={onChange}
-      
-    >
+    <Downshift>
       {({
         getInputProps,
         getItemProps,
@@ -31,14 +32,8 @@ export default function Suche() {
         getLabelProps
       }) => (
         <div>
-          <label
-            style={{ marginTop: "1rem", display: "block" }}
-            {...getLabelProps()}
-          >
-            Choose your favourite book
-          </label>{" "}
-          <br />
-          <input {...getInputProps({ placeholder: "Search books" })} />
+          
+          <input {...getInputProps({ placeholder: "Welches Buch wünschen Sie?" })} />
           {isOpen ? (
             <div className="downshift-dropdown">
               {books
@@ -67,3 +62,4 @@ export default function Suche() {
     </Downshift>
   );
 }
+

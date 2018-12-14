@@ -31,7 +31,9 @@ export default function Navbar() {
                 <li className="nav-item active"><a className="nav-link" href="#">Angebote</a></li>
               </ul>
             </div>  
+
             <Suche/>
+            
             <a className="Bucket" 
                 href="Warenkorb">
                 <i className="fas fa-shopping-cart fa-2x " style ={{color: "whitesmoke"}}/>
