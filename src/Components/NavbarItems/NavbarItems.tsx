@@ -7,6 +7,7 @@ export default function NavItems() {
             <ul className="navbar-nav mr-auto">
                 <NavbarKategorien/>
             </ul>
+            
         </div>
     )
 } 
