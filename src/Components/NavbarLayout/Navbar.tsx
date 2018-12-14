@@ -29,10 +29,11 @@ export default function Navbar() {
                   <Items/> 
                 <li className="nav-item active"><a className="nav-link" href="#">Wunschbücher</a></li>
                 <li className="nav-item active"><a className="nav-link" href="#">Angebote</a></li>
+                <Suche/>
               </ul>
             </div>  
 
-            <Suche/>
+           
             
             <a className="Bucket" 
                 href="Warenkorb">
