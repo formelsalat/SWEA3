@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Downshift from "downshift";
 import "./Suche.css";
 
@@ -28,10 +28,9 @@ export default function Suche() {
         inputValue,
         highlightedIndex,
         selectedItem,
-        highlightedItem,
         getLabelProps
       }) => (
-        <div>
+        <div className="mr-1 mt-lg-0 ml-1">
           
           <input {...getInputProps({ placeholder: "Welches Buch wünschen Sie?" })} />
           {isOpen ? (
@@ -56,7 +55,7 @@ export default function Suche() {
                   </div>
                 ))}
             </div>
-          ) : null}
+          ) :null }
         </div>
       )}
     </Downshift>
